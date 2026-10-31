@@ -1,0 +1,589 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="web_standard" name="shell-type">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Outfit:wght@100..900&amp;display=swap" rel="stylesheet">
+<style>
+@layer base{
+  html,body{margin:0;padding:0;}
+  body{overscroll-behavior:none;}
+  main>:first-child{margin-top:0!important;}
+  main>:last-child{margin-bottom:0!important;}
+}
+::-webkit-scrollbar{display:none;}
+</style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "on-primary-fixed": "#2a1700",
+        "surface-container-lowest": "#0e0e10",
+        "surface-dim": "#131315",
+        "tertiary-fixed-dim": "#4edea3",
+        "on-secondary": "#2f3038",
+        "error-container": "#93000a",
+        "secondary-fixed": "#e3e1ec",
+        "on-error-container": "#ffdad6",
+        "on-error": "#690005",
+        "inverse-primary": "#855300",
+        "secondary": "#c6c5cf",
+        "tertiary-container": "#30c88f",
+        "error": "#ffb4ab",
+        "surface-variant": "#353437",
+        "on-secondary-container": "#bcbbc5",
+        "tertiary-fixed": "#6ffbbe",
+        "on-primary-container": "#613b00",
+        "secondary-fixed-dim": "#c6c5cf",
+        "surface-container-highest": "#353437",
+        "primary-container": "#f59e0b",
+        "on-tertiary": "#003824",
+        "inverse-on-surface": "#313032",
+        "surface": "#131315",
+        "primary": "#ffc174",
+        "secondary-container": "#4a4b53",
+        "surface-container-high": "#2a2a2c",
+        "tertiary": "#56e5a9",
+        "on-tertiary-fixed": "#002113",
+        "on-primary": "#472a00",
+        "on-primary-fixed-variant": "#653e00",
+        "surface-tint": "#ffb95f",
+        "on-tertiary-fixed-variant": "#005236",
+        "surface-bright": "#39393b",
+        "on-background": "#e5e1e4",
+        "primary-fixed": "#ffddb8",
+        "surface-container": "#201f22",
+        "on-surface-variant": "#d8c3ad",
+        "on-secondary-fixed": "#1a1b22",
+        "primary-fixed-dim": "#ffb95f",
+        "background": "#131315",
+        "outline": "#a08e7a",
+        "on-secondary-fixed-variant": "#46464e",
+        "inverse-surface": "#e5e1e4",
+        "on-surface": "#e5e1e4",
+        "outline-variant": "#534434",
+        "on-tertiary-container": "#004e34",
+        "surface-container-low": "#1c1b1d"
+      },
+      borderRadius: {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      spacing: {
+        "space-sm": "0.5rem",
+        "gutter-sm": "1rem",
+        "margin": "2rem",
+        "space-2xl": "4rem",
+        "margin-lg": "4rem",
+        "space-3xl": "6rem",
+        "space-xs": "0.25rem",
+        "margin-sm": "1rem",
+        "space-lg": "1.5rem",
+        "space-md": "1rem",
+        "space-xl": "2.5rem",
+        "gutter": "1.5rem"
+      },
+      fontFamily: {
+        "label-lg": ["Geist"],
+        "headline-md": ["Outfit"],
+        "body-md": ["Geist"],
+        "body-lg": ["Geist"],
+        "label-mono": ["Geist"],
+        "display-hero": ["Outfit"],
+        "body-sm": ["Geist"],
+        "headline-xl-mobile": ["Outfit"],
+        "headline-lg": ["Outfit"],
+        "display-hero-mobile": ["Outfit"],
+        "headline-xl": ["Outfit"]
+      }
+    }
+  }
+};
+</script>
+</head>
+<body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary">
+<!-- NO GLOBAL HEADER / NAVBAR: STRICT D2C INDIA CONVERSION LANDING PAGE -->
+<main class="w-full bg-background pb-24">
+<div class="flex flex-col w-full">
+<!-- Top Flash Notification Bar (India deal) -->
+<section class="w-full bg-gradient-to-r from-red-950 via-surface-container-high to-surface-container-high py-2.5 px-margin border-b border-outline-variant/30">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 text-xs">
+<div class="flex items-center gap-2">
+<span class="inline-flex h-2.5 w-2.5 rounded-full bg-red-500 animate-ping"></span>
+<span class="px-2 py-0.5 rounded bg-red-600 text-white font-label-mono font-bold uppercase tracking-wider text-[11px]">Bazaar Flash Sale</span>
+<p class="font-label-mono text-on-surface">SPECIAL INTRODUCTORY PRICE • <span class="text-primary font-bold">FLAT 75% OFF</span> ENDS MIDNIGHT</p>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant font-label-mono hidden sm:flex text-[11px]">
+<span class="flex items-center gap-1 text-tertiary"><span class="material-symbols-outlined text-[15px]">local_shipping</span> Free Delivery Across India</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">payments</span> Cash on Delivery Available</span>
+</div>
+</div>
+</section>
+<!-- Breadcrumb Category Trail from image -->
+<div class="max-w-7xl mx-auto w-full px-margin pt-4 pb-2">
+<p class="text-[12px] font-label-mono text-on-surface-variant flex items-center gap-1 flex-wrap">
+<span class="">Computers &amp; Accessories</span>
+<span class="">›</span>
+<span class="">Accessories &amp; Peripherals</span>
+<span class="">›</span>
+<span class="">Laptop Accessories</span>
+<span class="">›</span>
+<span class="text-on-surface">Notebook Computer Stands</span>
+</p>
+</div>
+<!-- 1. HERO BUY BOX SECTION (Exact Match with Image 4) -->
+<section class="w-full py-space-md px-margin">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Interactive Gallery featuring Image 4 visual (lg: 6 cols) -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="relative bg-surface-container-low rounded-xl border border-outline-variant/30 p-2 sm:p-4 overflow-hidden group flex flex-col items-center justify-center"><div class="absolute top-3 left-3 z-10 flex flex-col gap-1.5"><span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-red-600/90 text-white font-label-mono text-[11px] font-bold shadow">-75% OFF</span><span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-highest/90 text-primary font-label-mono text-[11px] font-semibold border border-outline-variant/30"><span class="material-symbols-outlined text-[13px]">military_tech</span> #1 Best Seller</span></div><div class="w-full flex items-center justify-center py-2 bg-white rounded-lg overflow-hidden shadow-inner relative"><img alt="LAZYwindow 7-Angle Adjustable Metal Laptop Stand" class="w-full max-h-[440px] object-contain transition-transform duration-300 hover:scale-105 cursor-zoom-in" id="main-product-img" src="https://lh3.googleusercontent.com/aida/AEtjO1UfDI-T-_lKwNW3cYZiWgqjB_xsWhcEDPByHPo9nlHm6Tf9U0nxKxhEla9gqOcB_n2UCyNaWRXbotiN5RnuTQPSqJyruYpgPjKGwCLSiG4y8Lo_V6VKGYCZ5JYAaxgKUyIOGWi3NwUd8kWFpriYnkK5xmP6HkBFmwZSeZgep9wOtu-osMV0KDRIX-OaPLZtf1l_Eytanev0ki_LeQr7JfwsWQRzpAcctkdvF84iEN2jpA"></div><p class="text-center font-label-mono text-[11px] text-on-surface-variant mt-2">Tap thumbnail below to view angles, ergonomics &amp; specifications</p><div class="w-full grid grid-cols-5 gap-2 mt-2"><button type="button" onclick="document.getElementById('main-product-img').src='https://lh3.googleusercontent.com/aida/AEtjO1UfDI-T-_lKwNW3cYZiWgqjB_xsWhcEDPByHPo9nlHm6Tf9U0nxKxhEla9gqOcB_n2UCyNaWRXbotiN5RnuTQPSqJyruYpgPjKGwCLSiG4y8Lo_V6VKGYCZ5JYAaxgKUyIOGWi3NwUd8kWFpriYnkK5xmP6HkBFmwZSeZgep9wOtu-osMV0KDRIX-OaPLZtf1l_Eytanev0ki_LeQr7JfwsWQRzpAcctkdvF84iEN2jpA'" class="p-1 rounded-lg border-2 border-primary-container bg-white overflow-hidden shadow hover:opacity-90 transition-all"><img src="https://lh3.googleusercontent.com/aida/AEtjO1UfDI-T-_lKwNW3cYZiWgqjB_xsWhcEDPByHPo9nlHm6Tf9U0nxKxhEla9gqOcB_n2UCyNaWRXbotiN5RnuTQPSqJyruYpgPjKGwCLSiG4y8Lo_V6VKGYCZ5JYAaxgKUyIOGWi3NwUd8kWFpriYnkK5xmP6HkBFmwZSeZgep9wOtu-osMV0KDRIX-OaPLZtf1l_Eytanev0ki_LeQr7JfwsWQRzpAcctkdvF84iEN2jpA" alt="Studio View" class="w-full h-14 object-contain"></button><button type="button" onclick="document.getElementById('main-product-img').src='https://lh3.googleusercontent.com/aida-public/AB6AXuD23Vyp8ceuGJcLOChKnPfaeHUGb4bfzhm2lT7pl2j_Q_XJhh8fOke6cqIXbgcQgv5kzKtqgOD3tIepqnBHSja6s8uxLJV3Dfuc6V1atIN7SzVehpD0Mzh-EMIdsaUiaf-M9nSh-0LWpCaR0mVhoejAIN6K9sePjq8U9Vfd77d0bqE9L5Mov2X-ML0ikKWEnT0xHWsfKAWGSSIZlxVDZD2TlQAxFp-7z-ZFCo__YTrj5qNedMqHMDXaog'" class="p-1 rounded-lg border border-outline-variant/40 bg-white overflow-hidden hover:border-primary transition-all"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD23Vyp8ceuGJcLOChKnPfaeHUGb4bfzhm2lT7pl2j_Q_XJhh8fOke6cqIXbgcQgv5kzKtqgOD3tIepqnBHSja6s8uxLJV3Dfuc6V1atIN7SzVehpD0Mzh-EMIdsaUiaf-M9nSh-0LWpCaR0mVhoejAIN6K9sePjq8U9Vfd77d0bqE9L5Mov2X-ML0ikKWEnT0xHWsfKAWGSSIZlxVDZD2TlQAxFp-7z-ZFCo__YTrj5qNedMqHMDXaog" alt="Ergonomic Posture" class="w-full h-14 object-contain"></button><button type="button" onclick="document.getElementById('main-product-img').src='https://lh3.googleusercontent.com/aida-public/AB6AXuCGY1v-x2PHiLdn8yjLvwdVTm6fQXUVW4wgj7XhtlksyM5gWhL51vUB7GC75dp6Nj9dqWC_U0nZ5dApusoglrbrT1HMmLlDaV99APZorMpOK98KgKafXfAj_Nr-G4Do4c303vNhPGxgsEMHa1lqtppvwCL2LD0nyDVQyyBNO4e4XebXtNyDOLbcDkM8hTH87yuhrelFxVxD2WkANRPvSJzpBh7pKPuUDTdlD0BoBx9j5N0HUvqev97V-g'" class="p-1 rounded-lg border border-outline-variant/40 bg-white overflow-hidden hover:border-primary transition-all"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGY1v-x2PHiLdn8yjLvwdVTm6fQXUVW4wgj7XhtlksyM5gWhL51vUB7GC75dp6Nj9dqWC_U0nZ5dApusoglrbrT1HMmLlDaV99APZorMpOK98KgKafXfAj_Nr-G4Do4c303vNhPGxgsEMHa1lqtppvwCL2LD0nyDVQyyBNO4e4XebXtNyDOLbcDkM8hTH87yuhrelFxVxD2WkANRPvSJzpBh7pKPuUDTdlD0BoBx9j5N0HUvqev97V-g" alt="Adjustable Heights" class="w-full h-14 object-contain"></button><button type="button" onclick="document.getElementById('main-product-img').src='https://lh3.googleusercontent.com/aida-public/AB6AXuBPUTjyLU-haned72Co7ZCXERshPRaX5XVkNMOC4GZhpnW1HcAYsotFjl4xKJA6O40clmXrVySfB1lw_5AHMWdiLQL7UWzKSzKDwbGJD9m5LAIW-jvjLsRN9nOM0tySpyWpJtSAJtO4p-_3raxYV_KVQg8d2yG8oKvpBDEXhJmpvqkDhEtWpQ6KrkDKCcmmN2QzlsjaT2rzg5-iZCagZnZRLjocbPBIJrei2mQGU1hUIFKliBxvcqdADA'" class="p-1 rounded-lg border border-outline-variant/40 bg-white overflow-hidden hover:border-primary transition-all"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPUTjyLU-haned72Co7ZCXERshPRaX5XVkNMOC4GZhpnW1HcAYsotFjl4xKJA6O40clmXrVySfB1lw_5AHMWdiLQL7UWzKSzKDwbGJD9m5LAIW-jvjLsRN9nOM0tySpyWpJtSAJtO4p-_3raxYV_KVQg8d2yG8oKvpBDEXhJmpvqkDhEtWpQ6KrkDKCcmmN2QzlsjaT2rzg5-iZCagZnZRLjocbPBIJrei2mQGU1hUIFKliBxvcqdADA" alt="Detailed Hinges &amp; Pegs" class="w-full h-14 object-contain"></button><button type="button" onclick="document.getElementById('main-product-img').src='https://lh3.googleusercontent.com/aida-public/AB6AXuDlNKdrYBi7a91LoUV_K5H0Z0ZxEYLSxiW-NAsbPwHlQYXhDSSRu1QgC2VgOskXX6IDvE4o08_1u39bn6jwm6o2AreuzKfQuruEE9OttstuvoZNV9m9MK3YTClFn9tRj8HXHqoB5J9ti11N1Qd6yAVxeemAUPgaQRPhlDAuLOxyZulfPUaKyg77YH3kSRjghf0oBw1107dy4QlvLEYj-zHSE4Fxljj0Mr8Ii--r9LXHFe6wPRqwcE_6zA'" class="p-1 rounded-lg border border-outline-variant/40 bg-white overflow-hidden hover:border-primary transition-all"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlNKdrYBi7a91LoUV_K5H0Z0ZxEYLSxiW-NAsbPwHlQYXhDSSRu1QgC2VgOskXX6IDvE4o08_1u39bn6jwm6o2AreuzKfQuruEE9OttstuvoZNV9m9MK3YTClFn9tRj8HXHqoB5J9ti11N1Qd6yAVxeemAUPgaQRPhlDAuLOxyZulfPUaKyg77YH3kSRjghf0oBw1107dy4QlvLEYj-zHSE4Fxljj0Mr8Ii--r9LXHFe6wPRqwcE_6zA" alt="Laptop In-Use &amp; Pouch" class="w-full h-14 object-contain"></button></div><div class="w-full grid grid-cols-3 gap-2 mt-3 pt-3 border-t border-outline-variant/20 text-center text-[11px] font-label-mono text-on-surface-variant"><div class="flex items-center justify-center gap-1"><span class="material-symbols-outlined text-primary text-[15px]">straighten</span><span class="">Fits 10"–15.6"</span></div><div class="flex items-center justify-center gap-1"><span class="material-symbols-outlined text-tertiary text-[15px]">tune</span><span class="">7 Multi-Angles</span></div><div class="flex items-center justify-center gap-1"><span class="material-symbols-outlined text-primary text-[15px]">shield</span><span class="">Anti-Slip Silicone</span></div></div></div>
+<!-- Ask Rufus / Quick Buyer Questions Pills (Exact from Image) -->
+<div class="bg-surface-container rounded-xl p-space-md border border-outline-variant/20 space-y-2.5">
+<div class="flex items-center gap-2">
+<span class="inline-flex w-3 h-3 rounded-full bg-orange-500"></span>
+<span class="font-headline-md text-sm font-semibold text-on-surface">Frequently Asked by Indian Buyers</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<button class="px-3 py-1.5 rounded-full bg-blue-950/60 hover:bg-blue-900/80 border border-blue-600/40 text-blue-200 text-xs font-label-mono transition-colors text-left" onclick="alert('Yes! Fully compatible with MacBook Air/Pro, Dell XPS, HP, Lenovo ThinkPad, Asus, Acer, and tablets up to 15.6 inches.')">
+                Is it compatible with all laptop sizes? ↗
+              </button>
+<button class="px-3 py-1.5 rounded-full bg-blue-950/60 hover:bg-blue-900/80 border border-blue-600/40 text-blue-200 text-xs font-label-mono transition-colors text-left" onclick="alert('Yes! Folds flat in 1 second into a slim baton profile and comes with a complimentary grey travel felt sleeve.')">
+                Can this stand be folded for travel? ↗
+              </button>
+<button class="px-3 py-1.5 rounded-full bg-blue-950/60 hover:bg-blue-900/80 border border-blue-600/40 text-blue-200 text-xs font-label-mono transition-colors text-left" onclick="alert('Extremely sturdy! Equipped with 6 non-slip medical grade silicone pads and engineered triangular support tested up to 20kg load.')">
+                How sturdy is the anti-slip base? ↗
+              </button>
+</div>
+</div>
+<div class="block lg:hidden bg-surface-container rounded-xl p-space-md border border-outline-variant/30 space-y-2"><a href="https://link.amazon/B0jdhC6G9" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 px-space-md rounded-lg bg-primary-container hover:bg-primary text-on-primary-container font-headline-md text-base sm:text-lg font-bold flex items-center justify-center gap-2 transition-all duration-200 shadow-[0_8px_24px_-4px_rgba(245,158,11,0.4)] active:scale-[0.99]"><span class="">Buy Now - ₹247 (Buy on Amazon)</span><span class="material-symbols-outlined text-[20px]">bolt</span></a><p class="text-center font-label-mono text-[11px] text-tertiary font-semibold">⚡ Fast dispatch in 24 hrs • Free Delivery across India • Cash on Delivery</p></div></div>
+<!-- High-Conversion Purchase Column (lg: 6 cols) -->
+<div class="lg:col-span-6 flex flex-col gap-space-md bg-surface-container p-space-lg lg:p-space-xl rounded-xl border border-outline-variant/30">
+<!-- Brand and Title (Exact from Image 4) -->
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-xs text-primary font-bold uppercase tracking-wider">Visit the LAZYwindow Store</span>
+<span class="inline-flex items-center gap-1 font-label-mono text-xs text-tertiary bg-tertiary-container/10 px-2 py-0.5 rounded font-bold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> In Stock (Ready to Dispatch)
+              </span>
+</div>
+<h1 class="font-headline-md lg:font-headline-lg text-lg lg:text-2xl text-on-surface font-bold leading-snug">
+              LAZYwindow® 7-Angle Adjustable Metal Laptop Stand for Desk | Foldable Portable Ergonomic Tabletop Notebook Riser | Anti-Slip Design | for All Laptops | Silver Up to 15.6 Inch
+            </h1>
+<!-- Rating Row -->
+<div class="flex items-center gap-2 pt-1 flex-wrap">
+<div class="flex items-center bg-emerald-950/70 border border-emerald-600/50 px-2 py-0.5 rounded text-emerald-400 font-bold text-xs gap-1">
+<span class="">4.8</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span class="text-xs font-label-mono text-on-surface-variant">(3,842 verified Indian reviews)</span>
+<span class="text-xs text-outline font-label-mono">• 10K+ bought in past month</span>
+</div>
+</div>
+<hr class="border-outline-variant/30">
+<!-- PRICING BLOCK (CRITICAL: INDIA ONLY - NO DOLLARS) -->
+<div class="p-space-md rounded-xl bg-surface-container-high border border-outline-variant/40 space-y-2"><div class="flex items-baseline gap-3 flex-wrap"><span class="text-red-500 font-headline-xl text-3xl font-bold tracking-tight">-75%</span><span class="font-headline-xl text-3xl sm:text-4xl font-extrabold text-on-surface">₹247</span><div class="flex items-center gap-1.5 font-label-mono text-xs text-on-surface-variant"><span class="">M.R.P.:</span><span class="line-through text-outline">₹999</span></div><span class="ml-auto px-2 py-0.5 rounded bg-blue-900/50 text-blue-300 border border-blue-700/40 text-[11px] font-label-mono font-medium">Price history: Lowest ever</span></div><div class="flex items-center gap-2 flex-wrap text-xs"><span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded bg-red-600 font-bold text-white uppercase tracking-wider font-label-mono text-[10px]">bazaar <span class="font-normal lowercase">Crazy Prices</span></span><span class="font-label-mono text-on-surface-variant">Inclusive of all taxes</span><span class="text-tertiary font-bold ml-auto">You Save: ₹752 (75%)</span></div></div><div class="space-y-2 pt-1"><a href="https://link.amazon/B0jdhC6G9" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 px-space-md rounded-lg bg-primary-container hover:bg-primary text-on-primary-container font-headline-md text-base sm:text-lg font-bold flex items-center justify-center gap-2 transition-all duration-200 shadow-[0_8px_24px_-4px_rgba(245,158,11,0.4)] active:scale-[0.99]"><span class="">Buy Now - ₹247 (Buy on Amazon)</span><span class="material-symbols-outlined text-[20px]">bolt</span></a><p class="text-center font-label-mono text-[11px] text-tertiary font-semibold">⚡ Fast dispatch in 24 hrs • Free Delivery across 19,000+ PIN Codes</p></div>
+<!-- LOCALIZED OFFERS STRIP (From Image & Indian Context) -->
+<div class="space-y-2.5">
+<div class="flex items-center gap-2 text-xs font-label-mono text-primary font-bold">
+<span class="material-symbols-outlined text-[18px]">percent</span>
+<span class="">Exclusive Savings &amp; Offers</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+<!-- Offer 1: Cashback -->
+<div class="p-2.5 rounded bg-surface-container-low border border-outline-variant/30 space-y-1">
+<span class="font-headline-md text-xs font-bold text-on-surface block">Cashback</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-tight">Upto ₹5.00 cashback as Amazon Pay / UPI Balance when you order.</p>
+<span class="font-label-mono text-[11px] text-primary font-semibold block pt-1">3 offers ›</span>
+</div>
+<!-- Offer 2: Bank Offer -->
+<div class="p-2.5 rounded bg-surface-container-low border border-outline-variant/30 space-y-1">
+<span class="font-headline-md text-xs font-bold text-on-surface block">Bank Offer</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-tight">Upto ₹19.80 discount on HDFC Bank Credit Cards, Axis Bank, ICICI.</p>
+<span class="font-label-mono text-[11px] text-primary font-semibold block pt-1">3 offers ›</span>
+</div>
+<!-- Offer 3: Partner / GST -->
+<div class="p-2.5 rounded bg-surface-container-low border border-outline-variant/30 space-y-1">
+<span class="font-headline-md text-xs font-bold text-on-surface block">Partner Offers</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-tight">Get GST invoice and save up to 18% on business purchases.</p>
+<span class="font-label-mono text-[11px] text-primary font-semibold block pt-1">1 offer ›</span>
+</div>
+</div>
+<!-- UPI Rewards Banner -->
+<div class="p-2.5 rounded-lg bg-surface-container-high/70 border border-outline-variant/30 flex items-center justify-between text-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">diamond</span>
+<span class="font-label-mono text-on-surface">Get up to <strong class="text-primary font-bold">19 SuperCoins / ₹19 worth</strong> on all UPI payments (GPay, PhonePe, Paytm)</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">chevron_right</span>
+</div>
+</div>
+<!-- Color / Finish Selector -->
+<div class="space-y-1.5 pt-1">
+<div class="flex items-center justify-between text-xs font-label-mono">
+<span class="text-on-surface-variant">Finish:</span>
+<span class="text-primary font-bold" id="color-name">Space Silver (Included Felt Pouch)</span>
+</div>
+<div class="flex gap-2">
+<button class="px-3 py-1.5 rounded bg-surface-container-highest border-2 border-primary-container text-xs font-semibold text-on-surface flex items-center gap-1.5 shadow" type="button">
+<span class="w-3 h-3 rounded-full bg-slate-300"></span>
+<span class="">Silver (In Stock)</span>
+</button>
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-surface-container-highest border border-outline-variant/40 text-xs text-on-surface-variant flex items-center gap-1.5" type="button">
+<span class="w-3 h-3 rounded-full bg-slate-700"></span>
+<span class="">Space Gray (Limited)</span>
+</button>
+</div>
+</div>
+<!-- High-Priority Primary Conversion CTAs -->
+<div class="space-y-2 pt-2">
+<div class="flex items-center gap-2">
+<!-- Quantity selector -->
+<div class="flex items-center rounded bg-surface-container-high border border-outline-variant/40 p-1">
+<button class="w-8 h-9 flex items-center justify-center rounded text-on-surface hover:bg-surface-container-highest font-bold" onclick="adjustQty(-1)" type="button">-</button>
+<span class="w-8 text-center font-label-mono text-sm font-bold text-on-surface" id="product-qty">1</span>
+<button class="w-8 h-9 flex items-center justify-center rounded text-on-surface hover:bg-surface-container-highest font-bold" onclick="adjustQty(1)" type="button">+</button>
+</div>
+<!-- Secondary Cart Add -->
+<button class="flex-1 h-11 rounded bg-surface-container-highest hover:bg-surface-bright border border-outline-variant/40 text-on-surface font-label-lg text-sm font-semibold flex items-center justify-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span class="">Add To Cart</span>
+</button>
+</div>
+<!-- Main High-Contrast Buy Now CTA (India context) -->
+
+
+</div>
+<!-- Trust & Protection Badges (India specific) -->
+<div class="grid grid-cols-4 gap-2 pt-2 border-t border-outline-variant/20 text-center">
+<div class="p-2 rounded bg-surface-container-low flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]">local_shipping</span>
+<span class="font-label-mono text-[10px] text-on-surface-variant font-medium mt-1">Free Delivery</span>
+</div>
+<div class="p-2 rounded bg-surface-container-low flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-[20px]">payments</span>
+<span class="font-label-mono text-[10px] text-on-surface-variant font-medium mt-1">Cash on Delivery</span>
+</div>
+<div class="p-2 rounded bg-surface-container-low flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]">sync</span>
+<span class="font-label-mono text-[10px] text-on-surface-variant font-medium mt-1">7 Days Return</span>
+</div>
+<div class="p-2 rounded bg-surface-container-low flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-[20px]">verified_user</span>
+<span class="font-label-mono text-[10px] text-on-surface-variant font-medium mt-1">1 Year Warranty</span>
+</div>
+</div>
+<!-- Free Velvet/Felt Pouch Bonus Box -->
+<div class="p-2.5 rounded bg-surface-container-high/80 border border-primary/20 flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[22px]">redeem</span>
+<div class="text-xs">
+<span class="font-bold text-on-surface">Complimentary Felt Carry Pouch Included</span>
+<p class="text-on-surface-variant text-[11px]">Protects the stand from scratches inside your laptop sleeve or bag at no extra cost.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. PAIN POINTS & POSTURE ERGONOMICS SECTION -->
+<section class="w-full py-space-2xl px-margin bg-surface-container-lowest mt-space-lg">
+<div class="max-w-7xl mx-auto space-y-space-xl">
+<div class="max-w-3xl space-y-space-xs">
+<span class="font-label-mono text-label-mono text-primary uppercase font-bold tracking-widest">Medical-Grade Posture Ergonomics</span>
+<h2 class="font-headline-xl text-2xl lg:text-4xl text-on-surface font-semibold tracking-tight">Engineered to eliminate neck flexion, eye fatigue &amp; wrist tension.</h2>
+<p class="font-body-md text-on-surface-variant">Working directly on flat laptops forces a downward 45° head tilt, placing up to 22 kg of compressive spinal force. LAZYwindow raises screens to eye level in seconds.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- 7 Heights Visualizer -->
+<div class="lg:col-span-7 bg-surface-container p-space-lg lg:p-space-xl rounded-xl space-y-space-md border border-outline-variant/30">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<h3 class="font-headline-md text-lg font-semibold text-on-surface">7-Step Precision Angle Range</h3>
+<span class="font-label-mono text-xs px-2.5 py-1 rounded bg-surface-container-highest text-primary font-bold">15° TO 45° ELEVATION</span>
+</div>
+<!-- Angular SVG Diagram -->
+<div class="w-full bg-surface-container-low p-space-md rounded-xl flex flex-col items-center justify-center">
+<svg class="w-full max-w-md h-40" fill="none" viewBox="0 0 360 160">
+<line class="text-surface-container-highest" stroke="currentColor" stroke-linecap="round" stroke-width="4" x1="30" x2="330" y1="140" y2="140"></line>
+<text class="fill-current text-on-surface-variant font-label-mono" font-size="10" x="35" y="155">DESK PLANE (0°)</text>
+<line class="text-outline-variant" stroke="currentColor" stroke-dasharray="3 3" stroke-width="2" x1="60" x2="220" y1="140" y2="105"></line>
+<line class="text-outline-variant" stroke="currentColor" stroke-dasharray="3 3" stroke-width="2" x1="60" x2="200" y1="140" y2="75"></line>
+<line class="text-outline-variant" stroke="currentColor" stroke-dasharray="3 3" stroke-width="2" x1="60" x2="180" y1="140" y2="50"></line>
+<line class="text-primary" stroke="currentColor" stroke-linecap="round" stroke-width="4" x1="60" x2="160" y1="140" y2="30"></line>
+<line class="text-primary-container" stroke="currentColor" stroke-linecap="round" stroke-width="3" x1="160" x2="240" y1="30" y2="140"></line>
+<circle class="fill-current text-primary" cx="60" cy="140" r="6"></circle>
+<circle class="fill-current text-primary-container" cx="160" cy="30" r="5"></circle>
+<circle class="fill-current text-tertiary" cx="240" cy="140" r="5"></circle>
+<text class="fill-current text-primary font-label-mono font-bold" font-size="12" x="175" y="32">EYE LEVEL HEIGHT (+145mm)</text>
+<path class="text-tertiary" d="M 100 140 A 40 40 0 0 0 95 118" fill="none" stroke="currentColor" stroke-width="2"></path>
+<text class="fill-current text-tertiary font-label-mono" font-size="11" x="108" y="125">45° Peak</text>
+</svg>
+<div class="w-full grid grid-cols-7 gap-1 mt-3 text-center">
+<span class="font-label-mono text-[10px] p-1 rounded bg-surface-container-high text-on-surface-variant">L1: 15°</span>
+<span class="font-label-mono text-[10px] p-1 rounded bg-surface-container-high text-on-surface-variant">L2: 20°</span>
+<span class="font-label-mono text-[10px] p-1 rounded bg-surface-container-high text-on-surface-variant">L3: 25°</span>
+<span class="font-label-mono text-[10px] p-1 rounded bg-surface-container-high text-on-surface-variant">L4: 30°</span>
+<span class="font-label-mono text-[10px] p-1 rounded bg-surface-container-high text-on-surface-variant">L5: 35°</span>
+<span class="font-label-mono text-[10px] p-1 rounded bg-surface-container-high text-on-surface-variant">L6: 40°</span>
+<span class="font-label-mono text-[10px] p-1 rounded bg-primary-container text-on-primary-container font-bold">L7: 45°</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="p-space-sm rounded bg-surface-container-high border border-red-950/40">
+<p class="font-label-mono text-[11px] text-error font-bold mb-0.5">WITHOUT STAND</p>
+<p class="font-headline-md text-base text-on-surface font-semibold">22 kg Spinal Strain</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Kyphotic neck posture &amp; disk compression during long work hours.</p>
+</div>
+<div class="p-space-sm rounded bg-surface-container-high border border-emerald-950/40">
+<p class="font-label-mono text-[11px] text-tertiary font-bold mb-0.5">WITH LAZYWINDOW</p>
+<p class="font-headline-md text-base text-on-surface font-semibold">0 kg Strain Relief</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Neutral cervical spine, relaxed shoulders, and open airway posture.</p>
+</div>
+</div>
+</div>
+<!-- Feature Summary Column -->
+<div class="lg:col-span-5 space-y-3"><div class="rounded-xl overflow-hidden border border-outline-variant/30 bg-surface-container shadow"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD23Vyp8ceuGJcLOChKnPfaeHUGb4bfzhm2lT7pl2j_Q_XJhh8fOke6cqIXbgcQgv5kzKtqgOD3tIepqnBHSja6s8uxLJV3Dfuc6V1atIN7SzVehpD0Mzh-EMIdsaUiaf-M9nSh-0LWpCaR0mVhoejAIN6K9sePjq8U9Vfd77d0bqE9L5Mov2X-ML0ikKWEnT0xHWsfKAWGSSIZlxVDZD2TlQAxFp-7z-ZFCo__YTrj5qNedMqHMDXaog" alt="Ergonomic Eye-Level Viewing and Spine Alignment Diagram" class="w-full h-auto object-cover"><div class="p-space-sm bg-surface-container-high border-t border-outline-variant/20 flex items-center justify-between text-xs font-label-mono"><span class="text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">accessibility_new</span> Zero Neck Strain</span><span class="text-on-surface-variant">Natural Airflow Cooling</span></div></div><div class="p-space-md rounded-xl bg-surface-container border border-outline-variant/30 flex items-start gap-3"><div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0"><span class="material-symbols-outlined text-[22px]">hardware</span></div><div><h4 class="font-headline-md text-sm font-semibold text-on-surface">Architectural Aluminum Alloy</h4><p class="font-body-sm text-xs text-on-surface-variant">Sandblasted aerospace-grade finish with anti-oxidation coating designed to never chip, rust, or bend.</p></div></div><div class="p-space-md rounded-xl bg-surface-container border border-outline-variant/30 flex items-start gap-3"><div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-tertiary flex-shrink-0"><span class="material-symbols-outlined text-[22px]">shield</span></div><div><h4 class="font-headline-md text-sm font-semibold text-on-surface">Anti-Slip Silicone Protection</h4><p class="font-body-sm text-xs text-on-surface-variant">6 thick non-marring silicone pads prevent your laptop from slipping and protect desks from scratches.</p></div></div><div class="p-space-md rounded-xl bg-surface-container border border-outline-variant/30 flex items-start gap-3"><div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0"><span class="material-symbols-outlined text-[22px]">air</span></div><div><h4 class="font-headline-md text-sm font-semibold text-on-surface">Hollow Open-Air Cooling</h4><p class="font-body-sm text-xs text-on-surface-variant">360-degree ventilated base lets laptop intake fans breathe freely, lowering internal heat by up to 18°C.</p></div></div><div class="p-space-md rounded-xl bg-surface-container border border-outline-variant/30 flex items-start gap-3"><div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-tertiary flex-shrink-0"><span class="material-symbols-outlined text-[22px]">unfold_less</span></div><div><h4 class="font-headline-md text-sm font-semibold text-on-surface">1-Second Quick Fold</h4><p class="font-body-sm text-xs text-on-surface-variant">Collapses into a 45mm compact baton that slips inside the included grey travel pouch for easy carrying.</p></div></div></div>
+</div>
+</div>
+</section>
+<!-- 3. COMPATIBILITY & TECHNICAL SPECIFICATIONS -->
+<section class="w-full py-space-2xl px-margin" id="specifications">
+<div class="max-w-7xl mx-auto space-y-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-mono text-label-mono text-primary uppercase font-bold tracking-widest">Universal Compatibility</span>
+<h2 class="font-headline-xl text-2xl lg:text-3xl text-on-surface font-semibold mt-1">Supports All Laptops From 10" to 15.6" (Up to 17.3")</h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1 font-label-mono text-xs text-tertiary px-3 py-1 rounded bg-surface-container-high border border-outline-variant/30">
+<span class="material-symbols-outlined text-[15px]">check_circle</span> 20 KG MAXIMUM LOAD TESTED
+            </span>
+</div>
+</div>
+<!-- Compatible Devices -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-space-sm">
+<div class="p-space-sm rounded bg-surface-container text-center space-y-1 border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-[24px]">laptop_mac</span>
+<p class="font-label-lg text-xs font-semibold text-on-surface">Apple MacBook</p>
+<p class="font-label-mono text-[10px] text-on-surface-variant">Air &amp; Pro (11"–16")</p>
+</div>
+<div class="p-space-sm rounded bg-surface-container text-center space-y-1 border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-[24px]">laptop_windows</span>
+<p class="font-label-lg text-xs font-semibold text-on-surface">Dell Inspiron / XPS</p>
+<p class="font-label-mono text-[10px] text-on-surface-variant">13", 14", 15.6"</p>
+</div>
+<div class="p-space-sm rounded bg-surface-container text-center space-y-1 border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-[24px]">devices</span>
+<p class="font-label-lg text-xs font-semibold text-on-surface">Lenovo ThinkPad</p>
+<p class="font-label-mono text-[10px] text-on-surface-variant">IdeaPad, Yoga, Legion</p>
+</div>
+<div class="p-space-sm rounded bg-surface-container text-center space-y-1 border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-[24px]">laptop_chromebook</span>
+<p class="font-label-lg text-xs font-semibold text-on-surface">HP Pavilion / Envy</p>
+<p class="font-label-mono text-[10px] text-on-surface-variant">Victus &amp; Omen Series</p>
+</div>
+<div class="p-space-sm rounded bg-surface-container text-center space-y-1 border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-[24px]">tablet_mac</span>
+<p class="font-label-lg text-xs font-semibold text-on-surface">iPads &amp; Tablets</p>
+<p class="font-label-mono text-[10px] text-on-surface-variant">10.2" to 12.9" Drawing</p>
+</div>
+<div class="p-space-sm rounded bg-surface-container text-center space-y-1 border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-[24px]">menu_book</span>
+<p class="font-label-lg text-xs font-semibold text-on-surface">Books &amp; Tablets</p>
+<p class="font-label-mono text-[10px] text-on-surface-variant">Study &amp; Exam Books</p>
+</div>
+</div>
+<!-- Detailed Specifications Table -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mb-4"><div class="rounded-xl bg-surface-container overflow-hidden border border-outline-variant/30 shadow flex flex-col"><div class="p-3 bg-surface-container-high border-b border-outline-variant/20 flex items-center justify-between"><span class="font-label-mono text-xs text-primary font-bold uppercase tracking-wider flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">zoom_in</span> Mechanical Engineering Breakdown</span><span class="text-[11px] font-label-mono text-on-surface-variant">Hinges &amp; Locking Pegs</span></div><div class="p-2 bg-white flex items-center justify-center"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPUTjyLU-haned72Co7ZCXERshPRaX5XVkNMOC4GZhpnW1HcAYsotFjl4xKJA6O40clmXrVySfB1lw_5AHMWdiLQL7UWzKSzKDwbGJD9m5LAIW-jvjLsRN9nOM0tySpyWpJtSAJtO4p-_3raxYV_KVQg8d2yG8oKvpBDEXhJmpvqkDhEtWpQ6KrkDKCcmmN2QzlsjaT2rzg5-iZCagZnZRLjocbPBIJrei2mQGU1hUIFKliBxvcqdADA" alt="Close-up sturdy hinge, rubber grips, and height adjustment diagram" class="w-full h-auto object-contain max-h-[300px]"></div><div class="p-3 text-xs text-on-surface-variant font-body-sm border-t border-outline-variant/20">Detailed multi-point reinforced rivets, dual non-slip silicone hooks, and 7-tier support slots.</div></div><div class="rounded-xl bg-surface-container overflow-hidden border border-outline-variant/30 shadow flex flex-col"><div class="p-3 bg-surface-container-high border-b border-outline-variant/20 flex items-center justify-between"><span class="font-label-mono text-xs text-tertiary font-bold uppercase tracking-wider flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">featured_play_list</span> Portability &amp; Structure Specs</span><span class="text-[11px] font-label-mono text-on-surface-variant">Aluminum &amp; Folded Size</span></div><div class="p-2 bg-white flex items-center justify-center"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGY1v-x2PHiLdn8yjLvwdVTm6fQXUVW4wgj7XhtlksyM5gWhL51vUB7GC75dp6Nj9dqWC_U0nZ5dApusoglrbrT1HMmLlDaV99APZorMpOK98KgKafXfAj_Nr-G4Do4c303vNhPGxgsEMHa1lqtppvwCL2LD0nyDVQyyBNO4e4XebXtNyDOLbcDkM8hTH87yuhrelFxVxD2WkANRPvSJzpBh7pKPuUDTdlD0BoBx9j5N0HUvqev97V-g" alt="Adjustable heights, lightweight foldable and anti-slip silicone breakdown" class="w-full h-auto object-contain max-h-[300px]"></div><div class="p-3 text-xs text-on-surface-variant font-body-sm border-t border-outline-variant/20">Compact foldable baton profile easily fits work backpacks and laptop sleeves with full silicone desk protection.</div></div></div><div class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30">
+<div class="p-space-md bg-surface-container-high border-b border-outline-variant/30 flex items-center justify-between">
+<h3 class="font-headline-md text-base text-on-surface font-semibold">Technical Specifications &amp; Package Details</h3>
+<span class="font-label-mono text-xs text-primary font-bold">MRP: ₹999 | Offer: ₹247</span>
+</div>
+<div class="divide-y divide-surface-container-high/40 text-xs sm:text-sm">
+<div class="grid grid-cols-1 sm:grid-cols-3 p-space-sm sm:p-space-md">
+<span class="font-label-mono text-on-surface-variant uppercase">Material Formulation</span>
+<span class="sm:col-span-2 font-medium text-on-surface">Architectural CNC Sandblasted Aluminum Alloy + Non-Toxic Silicone</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 p-space-sm sm:p-space-md">
+<span class="font-label-mono text-on-surface-variant uppercase">Folded Dimensions</span>
+<span class="sm:col-span-2 font-medium text-on-surface">240 mm × 45 mm × 15 mm (Baton profile for easy bag storage)</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 p-space-sm sm:p-space-md">
+<span class="font-label-mono text-on-surface-variant uppercase">Deployed Dimensions</span>
+<span class="sm:col-span-2 font-medium text-on-surface">240 mm (Length) × 165 mm (Expanded Width) × 55–145 mm (Height)</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 p-space-sm sm:p-space-md">
+<span class="font-label-mono text-on-surface-variant uppercase">Net Weight</span>
+<span class="sm:col-span-2 font-medium text-on-surface">260 grams — Featherlight metal construction</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 p-space-sm sm:p-space-md">
+<span class="font-label-mono text-on-surface-variant uppercase">Angle Adjustment</span>
+<span class="sm:col-span-2 font-medium text-on-surface">7 discrete angle locks: 15°, 20°, 25°, 30°, 35°, 40°, 45°</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 p-space-sm sm:p-space-md">
+<span class="font-label-mono text-on-surface-variant uppercase">Package Contents</span>
+<span class="sm:col-span-2 font-medium text-primary">1x LAZYwindow 7-Angle Stand + 1x Complimentary Grey Felt Travel Pouch</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. VERIFIED INDIAN BUYER REVIEWS -->
+<section class="w-full py-space-2xl px-margin bg-surface-container-lowest" id="reviews">
+<div class="max-w-7xl mx-auto space-y-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-6 space-y-space-xs">
+<span class="font-label-mono text-label-mono text-primary uppercase font-bold tracking-widest">Verified Indian Buyer Reviews</span>
+<h2 class="font-headline-xl text-2xl lg:text-3xl text-on-surface font-semibold tracking-tight">Real WFH &amp; Office Desks. Solid Grip. Zero Shake.</h2>
+<p class="font-body-md text-on-surface-variant">Over 3,800 tech professionals and students across Bengaluru, Mumbai, Delhi-NCR, Hyderabad &amp; Pune trust LAZYwindow.</p>
+</div>
+<div class="lg:col-span-6 grid grid-cols-3 gap-space-sm">
+<div class="p-space-sm rounded-xl bg-surface-container text-center space-y-1 border border-outline-variant/20">
+<span class="font-headline-xl text-2xl font-bold text-primary">4.8 / 5</span>
+<div class="flex justify-center text-primary text-xs">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-label-mono text-[10px] text-on-surface-variant">Overall Rating</p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container text-center space-y-1 border border-outline-variant/20">
+<span class="font-headline-xl text-2xl font-bold text-tertiary">97%</span>
+<span class="material-symbols-outlined text-tertiary text-[18px] block">sentiment_satisfied_alt</span>
+<p class="font-label-mono text-[10px] text-on-surface-variant">Report Posture Relief</p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container text-center space-y-1 border border-outline-variant/20">
+<span class="font-headline-xl text-2xl font-bold text-on-surface">3,800+</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] block">verified</span>
+<p class="font-label-mono text-[10px] text-on-surface-variant">Delivered in India</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Indian Review 1 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between space-y-space-md border border-outline-variant/30">
+<div class="space-y-2"><div class="flex items-center justify-between"><div class="flex text-primary"><span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span></div><span class="font-label-mono text-[11px] text-tertiary font-bold flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">check_circle</span> Verified Purchase</span></div><h4 class="font-headline-md text-sm font-semibold text-on-surface">"Unbelievable quality for ₹247!"</h4><p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">“I was skeptical because of the low ₹247 price tag, but the aluminum finish is genuinely solid. It easily holds my heavy 15.6-inch ThinkPad. The free grey pouch is very handy when heading to the office in Bengaluru.”</p></div>
+<div class="flex items-center gap-2 pt-2 border-t border-outline-variant/20">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center font-bold text-xs text-primary">AK</div>
+<div>
+<p class="font-label-lg text-xs font-semibold text-on-surface">Aditya Kulkarni</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Software Engineer • Bengaluru</p>
+</div>
+</div>
+</div>
+<!-- Indian Review 2 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between space-y-space-md border border-outline-variant/30">
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-mono text-[11px] text-tertiary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Verified Purchase
+                </span>
+</div>
+<h4 class="font-headline-md text-sm font-semibold text-on-surface">"MacBook overheating issue resolved"</h4>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">“During Mumbai summers my laptop bottom used to heat up during Figma calls. With this stand, air flows freely underneath. My neck pain has significantly reduced over the last two weeks.”</p>
+</div>
+<div class="flex items-center gap-2 pt-2 border-t border-outline-variant/20">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center font-bold text-xs text-tertiary">PS</div>
+<div>
+<p class="font-label-lg text-xs font-semibold text-on-surface">Pooja Sharma</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Product Designer • Mumbai</p>
+</div>
+</div>
+</div>
+<!-- Indian Review 3 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between space-y-space-md border border-outline-variant/30">
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-mono text-[11px] text-tertiary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Verified Purchase
+                </span>
+</div>
+<h4 class="font-headline-md text-sm font-semibold text-on-surface">"Prompt COD delivery in Delhi"</h4>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">“Opted for Cash on Delivery. Arrived within 48 hours in South Delhi. The rubber pads prevent scratches on both my laptop and wooden study table. Complete value for money at ₹247.”</p>
+</div>
+<div class="flex items-center gap-2 pt-2 border-t border-outline-variant/20">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center font-bold text-xs text-primary-fixed-dim">RV</div>
+<div>
+<p class="font-label-lg text-xs font-semibold text-on-surface">Rohan Verma</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">“Opted for Cash on Delivery. Arrived within 48 hours in South Delhi. The rubber pads prevent scratches on both my laptop and wooden study table. Complete value for money at ₹247.”</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. FINAL HIGH-CONVERSION ORDER SECTION -->
+<section class="w-full py-space-2xl px-margin bg-surface-container-low text-center">
+<div class="max-w-2xl mx-auto space-y-space-md"><span class="px-3 py-1 rounded-full bg-red-600/90 text-white font-label-mono text-xs font-bold uppercase tracking-wider">Limited Stock Release • Flat 75% Off</span><h2 class="font-headline-xl text-2xl lg:text-4xl text-on-surface font-bold tracking-tight">Upgrade Your Workstation Posture Today</h2><div class="flex items-center justify-center gap-3"><span class="font-headline-xl text-3xl font-extrabold text-on-surface">₹247</span><span class="font-headline-md text-xl text-outline line-through">₹999</span><span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 font-label-mono text-xs font-bold">Save ₹752</span></div><p class="text-xs font-label-mono text-on-surface-variant">Includes 1x Metal Stand + 1x Complimentary Felt Travel Pouch • Free Express Delivery</p><div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3"><a href="https://link.amazon/B0jdhC6G9" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary-container font-headline-md text-base font-bold transition-all shadow-[0_8px_24px_-4px_rgba(245,158,11,0.4)]">Buy Now - ₹247 (Buy on Amazon)</a></div></div>
+</section>
+</div>
+</main>
+<!-- 6. PERSISTENT FLOATING BOTTOM CONVERSION BAR (India ₹198 Specific) -->
+<aside class="fixed bottom-0 left-0 right-0 z-50 bg-surface-container-high/95 backdrop-blur-xl border-t border-outline-variant/40 shadow-2xl py-2.5 px-margin" id="floating-buy-bar">
+<div class="max-w-7xl mx-auto flex items-center justify-between gap-space-md">
+<!-- Thumbnail & Price in ₹ -->
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-11 h-11 rounded bg-white p-0.5 flex-shrink-0 shadow overflow-hidden">
+<img alt="Thumbnail" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UfDI-T-_lKwNW3cYZiWgqjB_xsWhcEDPByHPo9nlHm6Tf9U0nxKxhEla9gqOcB_n2UCyNaWRXbotiN5RnuTQPSqJyruYpgPjKGwCLSiG4y8Lo_V6VKGYCZ5JYAaxgKUyIOGWi3NwUd8kWFpriYnkK5xmP6HkBFmwZSeZgep9wOtu-osMV0KDRIX-OaPLZtf1l_Eytanev0ki_LeQr7JfwsWQRzpAcctkdvF84iEN2jpA">
+</div>
+<div class="min-w-0">
+<p class="text-xs sm:text-sm font-semibold text-on-surface truncate">LAZYwindow® 7-Angle Stand + Felt Pouch</p>
+<div class="flex items-center gap-2"><span class="font-headline-md text-sm sm:text-base font-bold text-on-surface">₹247</span><span class="font-label-mono text-xs text-outline line-through">₹999</span><span class="px-1.5 py-0.2 rounded bg-red-600 text-white font-label-mono text-[10px] font-bold">-75%</span><span class="hidden md:inline font-label-mono text-[11px] text-tertiary">• Free Delivery</span></div>
+</div>
+</div>
+<!-- Action Button -->
+<div class="flex items-center gap-2 flex-shrink-0">
+<a href="https://link.amazon/B0jdhC6G9" target="_blank" rel="noopener noreferrer" class="px-4 sm:px-6 py-2.5 rounded bg-primary-container hover:bg-primary text-on-primary-container font-label-lg text-xs sm:text-sm font-bold flex items-center gap-1.5 shadow-[0_4px_16px_rgba(245,158,11,0.4)] active:scale-95 transition-all"><span class="">Buy Now - ₹247</span><span class="material-symbols-outlined text-[16px]">bolt</span></a>
+</div>
+</div>
+</aside>
+<footer class="w-full bg-surface-container-lowest text-on-surface-variant border-t border-outline-variant/30 py-8 px-margin">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-label-mono">
+<div class="flex items-center gap-2">
+<span class="font-bold text-on-surface">LAZYwindow® India</span>
+<span class="">• Direct-to-Consumer Official Store</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant flex-wrap justify-center">
+<span class="">GST Registered Business</span>
+<span class="">• All India Express Dispatch</span>
+<span class="">• 100% Secure Checkout</span>
+</div>
+</div>
+</footer>
+<script>
+  function adjustQty(delta) {
+    const qtyEl = document.getElementById('product-qty');
+    let current = parseInt(qtyEl.textContent) || 1;
+    current = Math.max(1, Math.min(10, current + delta));
+    qtyEl.textContent = current;
+  }
+</script>
+
+
+</body></html>
